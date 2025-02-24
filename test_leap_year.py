@@ -20,3 +20,10 @@ class TestLeapYear(unittest.TestCase):
         self.assertEqual(is_leap_year(2012), True)
         self.assertEqual(is_leap_year(2016), True)
 
+    def test__all_year_not_divisible_by_4__is_leap_year_returns_false(self):
+        """All years not divisible by 4 are NOT leap years (e.g. 2017, 2018, 2019)."""
+        self.assertEqual(is_leap_year(2017), False)
+        self.assertEqual(is_leap_year(2018), False)
+        self.assertEqual(is_leap_year(2019), False)
+
+

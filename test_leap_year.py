@@ -16,7 +16,7 @@ class TestLeapYear(unittest.TestCase):
 
     def test__all_years_divisible_by_4_but_not_by_100__is_leap_year_returns_true(self):
         """All years divisible by 4 but not by 100 ARE leap years (e.g., 2008, 2012, 2016),"""
-        self.assertEqual(is_leap_year(1700), True)
-        self.assertEqual(is_leap_year(1800), True)
-        self.assertEqual(is_leap_year(1900), True)
+        self.assertEqual(is_leap_year(2008), True)
+        self.assertEqual(is_leap_year(2012), True)
+        self.assertEqual(is_leap_year(2016), True)
 
